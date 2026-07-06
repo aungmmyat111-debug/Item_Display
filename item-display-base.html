@@ -39,7 +39,7 @@
       document.addEventListener("DOMContentLoaded", () => {
         const select = document.getElementById("item-list");
         
-        select.innerHTML = '<option value="">-- Select an Item --</option>';
+        select.innerHTML = '<option value="">Please select item...</option>';
         items.forEach(item => {
           select.innerHTML += `<option value="${item.id}">${item.name}</option>`;
         });
